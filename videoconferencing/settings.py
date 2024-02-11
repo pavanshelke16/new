@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'videoconferencing.wsgi.application'
 # }
 
 DATABASES = {
-    "default": dj_database_url.parse("postgres://testdb_o5h6_user:hAg1HoWTWqy36Ggr1HXKCXmATrjBeBjs@dpg-cn42q07qd2ns73ekcbc0-a/testdb_o5h6")
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
